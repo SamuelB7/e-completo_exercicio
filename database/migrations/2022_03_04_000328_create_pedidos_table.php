@@ -22,6 +22,7 @@ class CreatePedidosTable extends Migration
             $table->foreignId('id_cliente')
                 ->references('id')
                 ->on('clientes')
+                ->onDelete('cascade')
             ;
 
             $table->integer('id_loja');
@@ -29,6 +30,7 @@ class CreatePedidosTable extends Migration
             $table->foreignId('id_situacao')
                 ->references('id')
                 ->on('pedido_situacao')
+                ->onDelete('cascade')
             ;
         });
     }

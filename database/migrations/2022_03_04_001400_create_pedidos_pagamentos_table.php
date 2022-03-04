@@ -19,11 +19,13 @@ class CreatePedidosPagamentosTable extends Migration
             $table->foreignId('id_pedido')
                 ->references('id')
                 ->on('pedidos')
+                ->onDelete('cascade')
             ;
 
             $table->foreignId('id_formapagto')
                 ->references('id')
-                ->on('formas_pagamaneto')
+                ->on('formas_pagamento')
+                ->onDelete('cascade')
             ;
 
             $table->integer('qtd_parcelas');

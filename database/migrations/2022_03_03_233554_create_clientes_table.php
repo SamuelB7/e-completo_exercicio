@@ -20,7 +20,7 @@ class CreateClientesTable extends Migration
             $table->string('email');
             $table->string('tipo_pessoa');
             $table->date('data_nasc');
-            $table->integer('id_loja'); // O correto seria colocar uma FK, mas para funcionar o exercicio eu vou deixar como ID
+            $table->integer('id_loja'); // O correto seria colocar uma FK, mas para funcionar o exercicio eu vou deixar como Int
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class CreateClientesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('clientes');
     }
 }

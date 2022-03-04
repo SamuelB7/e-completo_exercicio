@@ -20,6 +20,7 @@ class CreateLojasGatewayTable extends Migration
             $table->foreignId('id_gateway')
                 ->references('id')
                 ->on('gateways')
+                ->onDelete('cascade')
             ;
 
             $table->timestamps();
