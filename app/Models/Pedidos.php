@@ -11,6 +11,8 @@ class Pedidos extends Model
 
     protected $table = 'pedidos';
 
+    protected $with = ['clientes', 'pedidoSituacao'];
+
     protected $fillable = [
         'valor_total',
         'valor_frete',
@@ -30,10 +32,10 @@ class Pedidos extends Model
     ];
 
     public function clientes() {
-        return $this->belongsTo(Clientes::class);
+        return $this->belongsTo(Clientes::class, 'id_cliente');
     }
 
     public function pedidoSituacao() {
-        return $this->belongsTo(PedidoSituacao::class);
+        return $this->belongsTo(PedidoSituacao::class, 'id_situacao');
     }
 }

@@ -29,12 +29,12 @@ class CreatePedidosPagamentosTable extends Migration
             ;
 
             $table->integer('qtd_parcelas');
-            $table->longText('retorno_intermediador');
-            $table->longText('data_processamento');
-            $table->longText('num_cartao');
-            $table->longText('nome_portador');
-            $table->integer('codigo_verificacao');
-            $table->longText('vencimento');
+            $table->longText('retorno_intermediador')->nullable();
+            $table->longText('data_processamento')->nullable();
+            $table->longText('num_cartao')->nullable();
+            $table->longText('nome_portador')->nullable();
+            $table->string('codigo_verificacao')->nullable();
+            $table->longText('vencimento')->nullable();
             $table->timestamps();
         });
     }

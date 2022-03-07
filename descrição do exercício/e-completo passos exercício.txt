@@ -1,3 +1,4 @@
 Passos:
 1 - Preencher .env com os dados de acesso ao db
-2 - php artisan migrate
+2 - php artisan migrate:fresh --seed
+3 - Rota para processar pagamento: http://localhost:8000/api/process_payment
