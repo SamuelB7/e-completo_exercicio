@@ -20,3 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/process_payment/{purchaseId}', [PedidosPagamentosController::class, 'processPayment'])->name('processar_pagamento');
+Route::post('/process_all_payments', [PedidosPagamentosController::class, 'processAllPayments'])->name('processar_todos_pagamentos');
+
