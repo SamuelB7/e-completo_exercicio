@@ -2,10 +2,10 @@
 
 Para rodar o teste e verificar as rotas:
 
-1 - Crie um arquivo <em>.env</em> a partir do <em> .env.example</em> e preencha com as credencias de acesso ao banco de dados.<br>
+1 - Crie um arquivo <em>.env</em> a partir do <em> .env.example</em> e preencha com as credencias de acesso ao banco de dados e chave API.<br>
 
 Exemplo:<br>
-<img src='https://i.imgur.com/n62kigS.png'>
+<img src='https://i.imgur.com/qCTWHNw.png'>
 
 2 - Rode o seguinte comando para criar e popular as tabelas no banco de dados:<br>
 

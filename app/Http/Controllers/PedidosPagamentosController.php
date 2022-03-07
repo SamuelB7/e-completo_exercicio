@@ -88,7 +88,7 @@ class PedidosPagamentosController extends Controller
                 [
                     'headers' => [
                         'Accept' => 'application/json',
-                        'Authorization' => 'cb2eceb3338a2d3e845c4a14cb4f8887'
+                        'Authorization' => env('API_KEY')
                     ],
                     'json' => $postData
                 ]
