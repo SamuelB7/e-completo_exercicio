@@ -32,6 +32,8 @@ class CreatePedidosTable extends Migration
                 ->on('pedido_situacao')
                 ->onDelete('cascade')
             ;
+
+            $table->timestamps();
         });
     }
 

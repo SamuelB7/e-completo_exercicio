@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/process_payment/{purchaseId}', [PedidosPagamentosController::class, 'processPayment'])->name('processar_pagamento');
+Route::post('/process_payment/{purchaseId}', [PedidosPagamentosController::class, 'processPayment'])->name('processar_pagamento');
