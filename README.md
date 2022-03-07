@@ -35,5 +35,6 @@ http://localhost:8000/api/process_all_payments
 
 Exemplo:
 
-<img src="https://i.imgur.com/GuYsVty.png">
+<img src="https://i.imgur.com/GuYsVty.png"> <br>
 
+## Obrigado pela oportunidade!
